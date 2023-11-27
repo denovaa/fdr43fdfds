@@ -32,7 +32,7 @@ jobs:
            password: ${{ secrets.GITHUB_TOKEN }}
 
       
-      - run: docker build -t ghcr.io/denovaa/python-app:latest .
+      - run: docker build -t ghcr.io/denovaa/python-app:latest 
       - run: docker push ghcr.io/denovaa/python-app:latest
 
 
